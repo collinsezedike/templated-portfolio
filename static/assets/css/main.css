@@ -37,6 +37,8 @@ ol, ul {
 	list-style: none;
 }
 
+
+
 blockquote, q {
 	quotes: none;
 }
@@ -2357,8 +2359,23 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			margin-left: -5rem;
 		}
 
+	    @media screen and (max-width: 600px) {
+			.image img {
+				width: 450px;
+				margin-left: auto;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			.image img{
+				width: 350px;
+				margin-left: -1rem;
+			}
+		}
+/* 
 		.image[data-position] img {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
@@ -2521,7 +2538,7 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				width: 100%;
-			}
+			} */
 
 /* List */
 
@@ -3879,4 +3896,10 @@ input, select, textarea {
 			padding: 4rem;
 		}
 
+	}
+
+	@media screen and (max-width: 600px) {
+		{
+			max-width: 100%;
+		}
 	}
